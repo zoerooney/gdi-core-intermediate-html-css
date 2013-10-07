@@ -183,7 +183,8 @@
 	  		    <p><img src="http://conservatives4palin.com/wp-content/uploads/2013/06/Plotting.gif" /></p>
 	  		    <ul>
 		  		    <li>HTML5 Form Elements</li>
-		  		    <li>CSS3 Problem Solvers - Columns &amp; Flexbox</li>
+		  		    <li>CSS3 Problem Solvers - Columns, Regions, &amp; Flexbox</li>
+		  		    <li>HTML5 Multimedia &amp; MORE...</li>
 	  		    </ul>
 	  		  </section>
 	  		</section>
@@ -254,15 +255,63 @@
 	  		    <p>Allows easy column divisions in content</p>
 	  		  </section>
 	  		  <section>
-	  		    <h2>Takes the following information:</h2>
+	  		    <h2>CSS3 Columns</h2>
+	  		    <p>Takes the following information:</p>
 	  		    <ul>
 	  		    	<li>Column Count</li>
 	  		    	<li>Column Gap</li>
 	  		    	<li>Column Rule</li>
 	  		    </ul>
+	  		    
+	  		  </section>
+	  		  <section>
+	  		    <h2>CSS3 Columns</h2>
+	  		    <pre><code contenteditable>
+#area {
+	-moz-column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px;
+	column-count: 3;
+	column-gap: 20px;
+}
+	  		    </code></pre>
 	  		    <p><a href="http://ie.microsoft.com/testdrive/graphics/hands-on-css3/hands-on_multi-column.htm">Intensive demo tool</a></p>
 	  		    <p><a href="http://css3generator.com">Quick generator</a></p>
 	  		  </section>
+	  		</section>
+	  		
+	  		<!-- Regions -->
+	  		<section>
+	  		  <section>
+	  		    <h2>Regions</h2>
+	  		    <p>Flow content between containers!</p>
+	  		  </section>
+	  		  <section>
+			    <h2>Regions</h2>
+			    <pre><code contenteditable>
+&lt;div id="source">
+  &lt;p>Lorem ipsum dolor [...]&lt;/p>
+&lt;/div>
+
+&lt;div id="region1" class="region">&lt;/div>
+&lt;div id="region2" class="region">&lt;/div>
+	  		 </code></pre>
+		    		  </section>
+	  		  <section>
+	  		   <h2>Regions</h2>
+	  		    <pre><code contenteditable>
+#source {
+	flow-into: main-thread;
+}
+   
+.region {
+	flow-from: main-thread;
+	background: #C5DFF0;
+}
+     		    </code></pre>
+     		    <p><a href="http://html.adobe.com/webplatform/layout/regions/">Resource from Adobe</a></p>
+     		  </section>
 	  		</section>
 	  		
 	  		<!-- Flexbox -->
@@ -293,29 +342,7 @@
 	            <h2><a href="http://html5readiness.com/" target="_blank">HTML5 &amp; CSS3 Readiness</a></h2>
 	            <img src="images/screenshots/html5-css3-readiness.png" alt=""/>
 	          </section>
-	          <section>
-	            <h2><a href="http://html5please.com/" target="_blank">HTML5 Please</a></h2>
-	            <img src="images/screenshots/html5-please.png" alt=""/>
-	          </section>
-	          <section>
-	            <img src="images/html5rocks.png" alt=""/>
-	            <p>
-	              <a href="http://www.html5rocks.com" target="_blank">http://www.html5rocks.com</a>
-	            </p>
-	          </section>
-	          <section>
-	            <img src="images/Mozilla-Developer-Network.png" alt=""/>
-	            <p>
-	              <a href="https://developer.mozilla.org" target="_blank">https://developer.mozilla.org</a>
-	            </p>
-	          </section>
-	          <section>
-	            <img src="images/html5doctor.png" alt=""/>
-	            <p>
-	              <a href="http://html5doctor.com" target="_blank">http://html5doctor.com</a>
-	            </p>
-	          </section>
-	          <section>
+	      	  <section>
 	            <h2>
 	              <a href="http://code.google.com/p/html5shiv/" target="_blank">HTML5Shiv</a>
 	            </h2>
@@ -357,24 +384,6 @@
 	            <ul>
 	              <li>HTML5 templates generator to help you get started with a new project based on HTML5 Boilerplate</li>
 	              <li>It generates for you a clean customizable template with just what you need to start!</li>
-	            </ul>
-	          </section>
-	        </section>
-	  
-	        <!-- Let's Develop It-->
-	        <section>
-	          <section>
-	            <h2>Let's Develop It</h2>
-	            <ul>
-	              <li>Look through the HTML5 tools in the previous section and try to update our site to work with older browsers</li>
-	              <li>
-	                Stuck or want something new?
-	                <ul>
-	                  <li>Use <a href="http://www.initializr.com/" target="_blank">Initializr</a> to create your own blank template</li>
-	                  <li>Look at the structure of the HTML and CSS to learn new ways of building a site structure</li>
-	                  <li>Use all your knowledge from the past classes to begin building something uniquely yours!</li>
-	                </ul>
-	              </li>
 	            </ul>
 	          </section>
 	        </section>
